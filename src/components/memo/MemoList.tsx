@@ -1,4 +1,4 @@
-import { MemoChildType } from "../types/type";
+import { MemoChildType } from "../../types/type";
 import MemoItem from "./MemoItem";
 
 export default function MemoList({ memos, selectedMemoIndex, setSelectedMemoIndex, deleteMemo }: MemoChildType

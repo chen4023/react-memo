@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { MemoType } from "../types/type";
+import { MemoType } from "../../types/type";
 
 type Props = {
   onClose: () => void

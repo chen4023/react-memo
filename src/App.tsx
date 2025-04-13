@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './App.css';
-import MemoContainer from './components/MemoContainer';
-import SideBar from './components/SideBar';
+import MemoContainer from './components/memo/MemoContainer';
+import SideBar from './components/sidebar/SideBar';
 import { MemoType } from './types/type';
 import { getItem, setItem } from './lib/storage';
 

@@ -1,7 +1,7 @@
-import MemoList from "./MemoList";
+import MemoList from "../memo/MemoList";
 import SideBarFooter from "./SideBarFooter";
 import SideBarHeader from "./SideBarHeader";
-import { MemoChildType } from "../types/type";
+import { MemoChildType } from "../../types/type";
 
 
 

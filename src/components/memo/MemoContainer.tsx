@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { MemoType } from "../types/type";
-import EmptyMemo from "./ui/EmptyMemo";
+import { MemoType } from "../../types/type";
+import EmptyMemo from "../ui/EmptyMemo";
 
 type Props = {
   memo: MemoType;

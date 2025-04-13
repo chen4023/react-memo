@@ -1,8 +1,8 @@
-import MemoAdd from "./MemoAdd";
-import Modal from "./common/Modal";
+import MemoAdd from "../memo/MemoAdd";
+import Modal from "../common/Modal";
 import { useState } from "react";
 
-import { MemoType } from "../types/type";
+import { MemoType } from "../../types/type";
 type Props = {
   addMemo: (newMemo: MemoType) => void
 }

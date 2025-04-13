@@ -1,4 +1,4 @@
-import { MemoLogo } from "./ui/MemoLogo";
+import { MemoLogo } from "../ui/MemoLogo";
 
 export default function SideBarHeader() {
 

@@ -1,4 +1,4 @@
-import { MemoType } from "../types/type";
+import { MemoType } from "../../types/type";
 import { MdDeleteForever } from "react-icons/md";
 
 type Props = {
