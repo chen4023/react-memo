@@ -13,7 +13,7 @@ export default function MemoContainer({ memo, setMemo }: Props) {
   if (!memo) return <EmptyMemo />;
 
   return (
-    <div className="bg-white rounded-2xl shadow-md p-6 m-6 flex-1 flex flex-col gap-6">
+    <div className="rounded-2xl shadow-md p-6 m-6 flex-1 flex flex-col gap-6">
       {/* Title */}
       <div>
         {isEdit ? (

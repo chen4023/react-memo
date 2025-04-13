@@ -4,7 +4,9 @@ import MemoContainer from './components/memo/MemoContainer';
 import SideBar from './components/sidebar/SideBar';
 import { MemoType } from './types/type';
 import { getItem, setItem } from './lib/storage';
+import debounce from 'lodash.debounce';
 
+const debouncedSetItem = debounce(setItem, 3000)
 
 function App() {
   const [memos, setMemos] = useState<MemoType[]>(getItem('memo') || [])
@@ -24,7 +26,7 @@ function App() {
     // setMemo(memos)로 변경하는 경우에는 javascript의 참조값이 동일하기 때문에 상태변화라고 인식하지 않음
     // 따라서 배열을 푼 후에 다시 할당을 해주어야 상태 변경으로 인지가 됨
     setMemos([...newMemos])
-    setItem('memo', newMemos)
+    debouncedSetItem('memo', newMemos)
   }
   const deleteMemo = (index: number) => {
     const newMemos = [...memos]
