@@ -1,0 +1,38 @@
+@import 'tailwindcss';
+
+#root {
+  margin: 0 auto;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+:root {
+  --font-jura: 'Jura', sans-serif;
+  --font-dohyeon: 'Do Hyeon', sans-serif;
+  --font-nanum: 'Nanum Gothic', sans-serif;
+}
+
+html,
+body {
+  font-family: 'Jura', sans-serif;
+}
+input,
+textarea {
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.font-jura {
+  font-family: 'Jura', sans-serif !important;
+}
+
+.font-dohyeon {
+  font-family: 'Do Hyeon', sans-serif !important;
+}
+
+.font-nanum {
+  font-family: 'Nanum Gothic', sans-serif !important;
+}
