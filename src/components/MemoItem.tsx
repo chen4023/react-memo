@@ -11,8 +11,8 @@ type Props = {
 
 export default function MemoItem({ memo, index, onClick, isSelected, deleteMemo }: Props) {
   return (
-    <div onClick={onClick} className={`group w-full truncate p-2 cursor-pointer flex justify-between ${isSelected ? 'bg-amber-50 font-bold' : ''}`}>
-      <p>{memo.title}</p>
+    <div onClick={onClick} className={`group w-full truncate p-3 cursor-pointer flex justify-between ${isSelected ? 'bg-amber-50 font-bold' : ''}`}>
+      <p className="truncate">{memo.title}</p>
       <button
         onClick={(e) => {
           e.stopPropagation()

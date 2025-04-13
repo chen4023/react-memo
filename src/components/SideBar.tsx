@@ -7,7 +7,7 @@ import { MemoChildType } from "../types/type";
 
 export default function SideBar({ memos, selectedMemoIndex, setSelectedMemoIndex, addMemo, deleteMemo }: MemoChildType) {
   return (
-    <div className="bg-amber-100 w-[200px]">
+    <div className="bg-amber-100 w-[250px]">
       <SideBarHeader />
       <MemoList
         memos={memos}

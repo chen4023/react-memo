@@ -13,7 +13,7 @@ export default function MemoContainer({ memo, setMemo }: Props) {
   if (!memo) return <EmptyMemo />;
 
   return (
-    <div className="bg-white font-dohyeon rounded-2xl shadow-md p-6 m-6 flex-1 flex flex-col gap-6">
+    <div className="bg-white rounded-2xl shadow-md p-6 m-6 flex-1 flex flex-col gap-6">
       {/* Title */}
       <div>
         {isEdit ? (
@@ -61,7 +61,7 @@ export default function MemoContainer({ memo, setMemo }: Props) {
       <div className="flex justify-end">
         <button
           onClick={() => setIsEdit((prev) => !prev)}
-          className="px-6 py-2 bg-amber-200 hover:bg-amber-300 text-neutral-800 font-semibold font-dohyeon rounded-md transition"
+          className="px-6 py-2 bg-amber-200 hover:bg-amber-300 text-neutral-800 font-semibold rounded-md transition"
         >
           {isEdit ? "저장하기" : "수정하기"}
         </button>
